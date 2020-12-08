@@ -18,8 +18,6 @@ body {
 
 i {
   font-size: 100px !important;
-  /* width: 80%; */
-  /* height: 80%; */
 }
 
 .card {
@@ -41,6 +39,10 @@ i {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.card--back i {
+  display: none;
 }
 
 .card--front {
