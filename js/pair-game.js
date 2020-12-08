@@ -9,4 +9,6 @@ const addAllEvent = () => {
     );
 }
 
+const iconArray = ['save', 'caret-right', 'envelope', 'paper'];
+
 (() => addAllEvent())();

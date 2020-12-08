@@ -16,6 +16,12 @@ body {
   width: 100%;
 }
 
+i {
+  font-size: 100px !important;
+  /* width: 80%; */
+  /* height: 80%; */
+}
+
 .card {
   color: black;
   text-align: center;
