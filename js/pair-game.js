@@ -25,7 +25,7 @@
             pairCheckTempArray.push(element);
             if (pairCheckTempArray.length === 2) {
                 if (!checkIsPair()) {
-                    console.log('nem pár');
+                    // console.log('nem pár');
                     setTimeout(() => {
                         pairCheckTempArray.forEach(item => {
                             item.classList.remove('card--front');
@@ -35,14 +35,14 @@
                     }
                         , 2500);
                 } else {
-                    console.log('pár');
+                    // console.log('pár');
                     pairCheckTempArray.forEach(item => {
                         item.removeEventListener('click', clickEvent, true);
                     });
                     pairCheckTempArray = [];
                     if (Array.from(cards).every(item => [...item.classList].includes('card--front'))) {
                         counterStop();
-                        console.log('vege');
+                        // console.log('vege');
                         setTimeout(() => window.location.reload(), 5000);
                     }
                 }
