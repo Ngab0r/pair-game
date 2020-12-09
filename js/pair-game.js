@@ -1,6 +1,10 @@
 {
     'use strict';
-    const iconArray = ['save', 'caret-right', 'envelope', 'caret-left', 'save', 'caret-right', 'envelope', 'caret-left', 'star', 'star'];
+    const shuffleIcons = () =>
+        ['save', 'caret-right', 'envelope', 'caret-left', 'save', 'caret-right', 'envelope', 'caret-left', 'star', 'star']
+            .sort(() => Math.random() - 0.5);
+    const iconArray = shuffleIcons();
+
     const getAnIconFromArray = () => iconArray.pop();
     const cards = document.querySelectorAll('.card');
     let pairCheckTempArray = [];
