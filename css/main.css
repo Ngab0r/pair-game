@@ -41,8 +41,15 @@ i {
   background-repeat: no-repeat;
 }
 
-.card--back i {
-  display: none;
+.card i {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1.5s, opacity 0.5s step-end;
+}
+
+.card.card--front i {
+  visibility: visible;
+  opacity: 1;
 }
 
 .card--front {
