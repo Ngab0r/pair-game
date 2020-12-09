@@ -44,7 +44,7 @@ i {
 .card i {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 1.5s, opacity 0.5s step-end;
+  transition: visibility 1.5s, opacity 0.4s step-end;
 }
 
 .card.card--front i {
