@@ -13,6 +13,7 @@
 
 
     const clickEvent = (inputElement) => {
+        startCounter();
         const element = inputElement.currentTarget;
         if (pairCheckTempArray.length < 2) {
             element.classList.add('card--front');
@@ -36,8 +37,9 @@
                     });
                     pairCheckTempArray = [];
                     if (Array.from(cards).every(item => [...item.classList].includes('card--front'))) {
-                        //timer stop
+                        counterStop();
                         console.log('vege');
+                        setTimeout(() => window.location.reload(), 5000);
                     }
                 }
             }
